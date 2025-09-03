@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>WoWS Tokens Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WoWS Tokens Calculator</h1>
+
+        <div class="controls">
+            <label for="server">Serveur :</label>
+            <select id="server">
+                <option value="eu">EU</option>
+                <option value="na">NA</option>
+                <option value="ru">RU</option>
+                <option value="asia">ASIA</option>
+            </select>
+
+            <label for="nickname">Pseudo :</label>
+            <input type="text" id="nickname" placeholder="Pseudo WoWS">
+
+            <button id="btnLoadProfile">Charger Profil</button>
+            <button id="btnReset">Reset</button>
+        </div>
+
+        <div class="flags">
+            <label><input type="checkbox" id="chkEventPass"> Event Pass</label>
+            <label><input type="checkbox" id="chkFreeT6"> Free T6</label>
+            <label><input type="checkbox" id="chkFreeT7"> Free T7</label>
+            <label><input type="checkbox" id="chkOptioT7"> Optio T7</label>
+            <label><input type="checkbox" id="chkFreeT8"> Free T8</label>
+            <label><input type="checkbox" id="chkFreeT10"> Free T10</label>
+            <label><input type="checkbox" id="chkKushiro"> Kushiro</label>
+            <label><input type="checkbox" id="chkTXBonus"> TX Bonus</label>
+        </div>
+
+        <table id="tierGrid">
+            <thead>
+                <tr>
+                    <th>Tier</th>
+                    <th>Tokens</th>
+                    <th>Navires</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Lignes ajoutées par JS -->
+            </tbody>
+        </table>
+
+        <div class="totals">
+            <p id="subTotalText">Subtotal: 0</p>
+            <p id="totalText">Total: 0</p>
+            <p id="superContainersText">Number of Supercontainers: 0</p>
+            <p id="remainText">Remain: 0</p>
+        </div>
+
+        <p id="lblStatus"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
